@@ -1,0 +1,30 @@
+{
+  "name": "dom-animations",
+  "version": "1.0.0",
+  "description": "Dom animation modules",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "dev": "webpack serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Haervwe/Dom-Animations.git"
+  },
+  "author": "Haervwe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Haervwe/Dom-Animations/issues"
+  },
+  "homepage": "https://github.com/Haervwe/Dom-Animations#readme",
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "eslint": "^8.21.0",
+    "eslint-webpack-plugin": "^3.2.0",
+    "sass-loader": "^13.0.2",
+    "style-loader": "^3.3.1",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.3"
+  }
+}
