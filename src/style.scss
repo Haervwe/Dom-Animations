@@ -1,0 +1,60 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+#main {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 5% 95%;
+  .header {
+    background-color: gray;
+    border: 2px solid black;
+    .dropListContainer {
+      margin-left: 2%;
+      display: flex;
+      height: 90%;
+      width: 100%;
+      align-items: center;
+      justify-content: flex-start;
+      .showList {
+        position: relative;
+        border: 2px solid black;
+        width: 20%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .showList:hover {
+        background-color: gray;
+        transform: scale(1.1);
+      }
+      .dropList {
+        display: none;
+        top: 5%;
+        left: 2%;
+        width: 20%;
+        background-color: gray;
+        grid-template-rows: repeat(6, 30px);
+        grid-template-columns: 1fr;
+        position: absolute;
+        border: 1px solid black;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        opacity: 0;
+        transition: opacity 300ms ease-in-out;
+        .item {
+          justify-items: center;
+          height: 100%;
+          border: 1px solid black;
+        }
+      }
+      .render {
+        display: grid;
+      }
+      .active {
+        opacity: 1;
+      }
+    }
+  }
+}
